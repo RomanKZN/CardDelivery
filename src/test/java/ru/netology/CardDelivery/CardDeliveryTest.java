@@ -34,6 +34,6 @@ public class CardDeliveryTest {
         $(By.cssSelector("[data-test-id=phone] input")).setValue("+79999998888");
         $(By.className("checkbox__box")).click();
         $(By.className("button__text")).click();
-        $x("//*[contains(text(),'Успешно')]").shouldBe(Condition.visible, Duration.ofSeconds(14));
+        $x("//*[contains(text(),'Успешно')]").shouldBe(Condition.visible, Duration.ofSeconds(15));
     }
 }
